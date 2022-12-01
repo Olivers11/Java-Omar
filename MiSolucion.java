@@ -1,85 +1,81 @@
-// Tarea1 ejercicio1
+// Tarea 2 ejercicio 1
 import java.util.Scanner;
 
 class Ejemplo{
 
     public static void main(String[] args){
-       Scanner entrada = new Scanner(System.in);
-       System.out.print("Ingrese el primer numero: ");
-       int num1 = entrada.nextInt();
-       System.out.print("Ingrese el segundo numero: ");
-       int num2 = entrada.nextInt();
-      int resta = num1-num2;
-
-      System.out.println("La resta de ambos numeros es: "+resta);
-    }  
-}
-
-//Tarea1 ejercicio2
-import java.util.Scanner;
-
-class Ejemplo{
-
-    public static void main(String[] args){
-       Scanner entrada = new Scanner(System.in);
-       System.out.print("Ingrese su nombre: ");
-       String nombre = entrada.nextLine();
-       System.out.print("Ingrese su apellido: ");
-       String apellido = entrada.nextLine();
-       
-       if(nombre.length()< 6 && apellido.length()< 5 ){
-            System.out.println("NO");
-       }else{
-            System.out.println("SI");
-
-       }
-
-      
-    }  
-}
-
-//Tarea 1 Ejercicio3
-
-import java.util.Scanner;
-
-class Ejemplo{
-
-    public static void main(String[] args){
-       Scanner entrada = new Scanner(System.in);
-       System.out.print("Ingrese un numero: ");
-       int num = entrada.nextInt();
-        int resultado = num % 2;
-       if(resultado == 0){
-
-            System.out.println("El numero es par");
-       }else{
-
-
-            System.out.println("El numero es impar");
-       }
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese un numero: ");
+         int num = entrada.nextInt();
+         int contador = 1; 
+        while(contador<=num){
+            System.out.println(contador);
+            contador++;
     
-
-      
-    }  
+        }
+    
+    }
 }
 
-//Tarea 1 Ejercicio 4
-
+// Tarea 2 ejercicio 2
 import java.util.Scanner;
 
 class Ejemplo{
 
     public static void main(String[] args){
-       Scanner entrada = new Scanner(System.in);
-       System.out.print("Ingrese su edad: ");
-       int edad = entrada.nextInt();
+        int num = 0;
+        while(num>=0){
+            Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese un numero: ");
+         num = entrada.nextInt();
+        }
+    
+    }
+}
 
-       if(edad>=18){
-        System.out.println("Es mayor de edad");
-       }else{
+// Tarea 2 ejercicio 3
 
-        System.out.println("Es menor de edad");
-       }
-      
+import java.util.Scanner;
+
+class Ejemplo {
+
+    public static void main(String[] args) {
+        int num = 0;
+        int sum = 0;
+        while (true) {
+            Scanner entrada = new Scanner(System.in);
+            System.out.println("Ingrese un numero: ");
+            num = entrada.nextInt();
+
+            if (num < 0) {
+                break;
+            } else {
+                sum = sum + num;
+            }
+
+        }
+        System.out.println("la suma es: " + sum);
+
+    }
+}
+
+
+//Tarea 2 ejercicio 4
+import java.util.Scanner;
+
+class Ejemplo{
+
+    public static void main(String[] args){
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese un numero: ");
+         int num = entrada.nextInt();
+         System.out.println("Ingrese otro numero: ");
+         int numd = entrada.nextInt(); 
+        while(num<=numd){
+            System.out.println(num);
+            num++;
+    
+        }
+    
     }
 }
